@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="test/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <!--    Start Section     -->
+        <div id="start">Start Test</div>
+
+        <!--    Guide Section    -->
+        <div id="guide">
+            <h2>Test</h2>
+            <h4>Are You Ready??</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+
+        <!--    Test Section    -->
+        <div id="test">
+            <div id="test_header">
+                <h5>Test Page</h5>
+                <div id="timer">
+                    <h6>Time Left</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+
+            <!--     Test Questions  -->
+
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+
+            <!--       Test Choices   -->
+
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+
+            <!--  Answers Section-->
+
+            <div id="answersSection">
+                <h3 id="total_correct">3 Of 10 Questions</h3>
+                <h3 id="prev_question">Previous</h3>
+                <h3 id="next_question">Next</h3>
+                <h3 id="mark_question" onclick="mark()">Mark</h3>
+            </div>
+            <div id="mark">
+                
+            </div>
+        </div>
+        <!--   Result Section  -->
+        <div id="result">
+            <i class="fas fa-trophy"></i>
+            <h6 id="points">Got 4 Of 10</h6>
+            <!-- <h6>You Have Completed The Test</h6> -->
+            <button id="quit">Quit Test</button>
+            <button id="startAgain">Start Again</button>
+        </div>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+    <script src="loginScript.js"></script>
+</body>
+</html>
